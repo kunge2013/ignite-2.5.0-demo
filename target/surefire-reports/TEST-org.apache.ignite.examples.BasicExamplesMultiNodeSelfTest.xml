@@ -1,0 +1,1388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest" time="67.07" tests="5" errors="5" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.class.path" value="/D:/软件/spring-tool-suite-3.7.3.RELEASE-e4.5.2-win32-x86_64/sts-bundle/sts-3.7.3.RELEASE/plugins/org.eclipse.m2e.maven.runtime_1.6.2.20150902-0001/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="maven.home" value="F:\openSource\apache-ignite-2.5.0-src\examples\EMBEDDED"/>
+    <property name="surefire.test.class.path" value="F:\openSource\apache-ignite-2.5.0-src\examples\target\test-classes;F:\openSource\apache-ignite-2.5.0-src\examples\target\classes;C:\Users\admin\.m2\repository\javax\cache\cache-api\1.0.0\cache-api-1.0.0.jar;C:\Users\admin\.m2\repository\org\apache\ignite\ignite-core\2.5.0\ignite-core-2.5.0.jar;C:\Users\admin\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\admin\.m2\repository\org\apache\ignite\ignite-spring\2.5.0\ignite-spring-2.5.0.jar;C:\Users\admin\.m2\repository\org\springframework\spring-core\4.3.7.RELEASE\spring-core-4.3.7.RELEASE.jar;C:\Users\admin\.m2\repository\org\springframework\spring-aop\4.3.7.RELEASE\spring-aop-4.3.7.RELEASE.jar;C:\Users\admin\.m2\repository\org\springframework\spring-beans\4.3.7.RELEASE\spring-beans-4.3.7.RELEASE.jar;C:\Users\admin\.m2\repository\org\springframework\spring-context\4.3.7.RELEASE\spring-context-4.3.7.RELEASE.jar;C:\Users\admin\.m2\repository\org\springframework\spring-expression\4.3.7.RELEASE\spring-expression-4.3.7.RELEASE.jar;C:\Users\admin\.m2\repository\org\springframework\spring-tx\4.3.7.RELEASE\spring-tx-4.3.7.RELEASE.jar;C:\Users\admin\.m2\repository\org\springframework\spring-jdbc\4.3.7.RELEASE\spring-jdbc-4.3.7.RELEASE.jar;C:\Users\admin\.m2\repository\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar;C:\Users\admin\.m2\repository\org\apache\ignite\ignite-log4j\2.5.0\ignite-log4j-2.5.0.jar;C:\Users\admin\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\admin\.m2\repository\org\apache\ignite\ignite-indexing\2.5.0\ignite-indexing-2.5.0.jar;C:\Users\admin\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\admin\.m2\repository\org\apache\lucene\lucene-core\5.5.2\lucene-core-5.5.2.jar;C:\Users\admin\.m2\repository\org\apache\lucene\lucene-analyzers-common\5.5.2\lucene-analyzers-common-5.5.2.jar;C:\Users\admin\.m2\repository\org\apache\lucene\lucene-queryparser\5.5.2\lucene-queryparser-5.5.2.jar;C:\Users\admin\.m2\repository\org\apache\lucene\lucene-queries\5.5.2\lucene-queries-5.5.2.jar;C:\Users\admin\.m2\repository\org\apache\lucene\lucene-sandbox\5.5.2\lucene-sandbox-5.5.2.jar;C:\Users\admin\.m2\repository\com\h2database\h2\1.4.195\h2-1.4.195.jar;C:\Users\admin\.m2\repository\org\apache\ignite\ignite-ml\2.5.0\ignite-ml-2.5.0.jar;C:\Users\admin\.m2\repository\it\unimi\dsi\fastutil\7.0.12\fastutil-7.0.12.jar;C:\Users\admin\.m2\repository\com\github\fommil\netlib\core\1.1.2\core-1.1.2.jar;C:\Users\admin\.m2\repository\net\sourceforge\f2j\arpack_combined_all\0.1\arpack_combined_all-0.1.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-rng-core\1.0\commons-rng-core-1.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-rng-client-api\1.0\commons-rng-client-api-1.0.jar;C:\Users\admin\.m2\repository\org\apache\commons\commons-rng-simple\1.0\commons-rng-simple-1.0.jar;C:\Users\admin\.m2\repository\com\zaxxer\SparseBitSet\1.0\SparseBitSet-1.0.jar;C:\Users\admin\.m2\repository\org\apache\ignite\ignite-spring-data\2.5.0\ignite-spring-data-2.5.0.jar;C:\Users\admin\.m2\repository\org\springframework\data\spring-data-commons\1.13.1.RELEASE\spring-data-commons-1.13.1.RELEASE.jar;C:\Users\admin\.m2\repository\org\slf4j\slf4j-api\1.7.24\slf4j-api-1.7.24.jar;C:\Users\admin\.m2\repository\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\admin\.m2\repository\com\google\code\simple-spring-memcached\spymemcached\2.8.4\spymemcached-2.8.4.jar;C:\Users\admin\.m2\repository\org\apache\ignite\ignite-core\2.5.0\ignite-core-2.5.0-tests.jar;C:\Users\admin\.m2\repository\org\gridgain\ignite-shmem\1.0.0\ignite-shmem-1.0.0.jar;C:\Users\admin\.m2\repository\org\javassist\javassist\3.20.0-GA\javassist-3.20.0-GA.jar;C:\Users\admin\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\admin\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Program Files\Java\jdk1.8.0_131\jre\..\lib\tools.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\admin"/>
+    <property name="user.language" value="zh"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_131\jre"/>
+    <property name="basedir" value="F:\openSource\apache-ignite-2.5.0-src\examples"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_131\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="user.name" value="admin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="6.1"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="GBK"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\admin\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\admin\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="user.dir" value="F:\openSource\apache-ignite-2.5.0-src\examples"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="F:\openSource\apache-ignite-2.5.0-src\examples"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;F:\app\admin\product\11.2.0\dbhome_1\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_131\bin;C:\Program Files\Java\gradle-3.4\bin;D:\Program Files\Microsoft SQL Server\110\DTS\Binn\;D:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files\Microsoft SQL Server\110\Tools\Binn\;D:\Program Files (x86)\Microsoft SQL Server\110\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\;D:\Program Files (x86)\Microsoft SQL Server\110\DTS\Binn\;C:\Program Files\IDM Computer Solutions\UltraEdit;C:\Program Files\IDM Computer Solutions\UltraCompare;C:\Program Files (x86)\Oracle\Instant Client\bin;D:\nodejs\node_modules\express;D:\maven\apache-maven-3.1.0\bin;C:\Program Files\MySQL\MySQL Utilities 1.6\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\admin\AppData\Roaming\npm;D:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Nmap;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="classworlds.conf" value="D:\activity\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4543901511816151266.tmp"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_131\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testRunnableExample" classname="org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest" time="16.403">
+    <error message="Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]" type="org.apache.ignite.IgniteException">org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@430d3bf9], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=b0624382-763b-4a92-8ade-e06bb5d4af65]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+</error>
+    <system-out><![CDATA[Configured log4j from: F:\openSource\apache-ignite-2.5.0-src\modules\core\src\test\config\log4j-test.xml
+[2018-06-29 15:27:21,268][INFO ][main][root] >>> Starting test class: BasicExamplesMultiNodeSelfTest <<<
+[2018-06-29 15:27:21,403][INFO ][main][root] >>> Starting test: BasicExamplesMultiNodeSelfTest#testRunnableExample <<<
+[2018-06-29 15:27:21,403][INFO ][main][root] Loading remote configs properties from file: modules/core/src/test/config/examples.properties
+[2018-06-29 15:27:21,451][INFO ][main][root] Config for remote nodes [name=RunnableExample, cfg=examples/config/example-ignite.xml, dflt=examples/config/example-ignite.xml]
+[2018-06-29 15:27:21,550][INFO ][main][FileSystemXmlApplicationContext] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@1f27b34b: startup date [Fri Jun 29 15:27:21 CST 2018]; root of context hierarchy
+[2018-06-29 15:27:21,656][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-ignite.xml]
+[2018-06-29 15:27:21,817][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-default.xml]
+[2018-06-29 15:27:22,603][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.5.0#20180524-sha1:86e110c7
+>>> 2018 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[2018-06-29 15:27:22,603][INFO ][main][BasicExamplesMultiNodeSelfTest0] Config URL: n/a
+[2018-06-29 15:27:22,634][INFO ][main][BasicExamplesMultiNodeSelfTest0] IgniteConfiguration [igniteInstanceName=examples.BasicExamplesMultiNodeSelfTest0, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=F:\openSource\apache-ignite-2.5.0-src, igniteWorkDir=F:\openSource\apache-ignite-2.5.0-src\work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@2bb4b203, nodeId=b0624382-763b-4a92-8ade-e06bb5d4af65, marsh=org.apache.ignite.internal.binary.BinaryMarshaller@3eba813d, marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=null, enableForcibleNodeKill=false, enableTroubleshootingLog=false, srvLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$2@430c2875, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, lsnr=null, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@3983d505[Count = 1], stopping=false, metricsLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener@2fc2bb2f], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@22d0b2d0, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [lsnr=null], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@51ece47a, addrRslvr=null, clientMode=false, rebalanceThreadPoolSize=1, txCfg=org.apache.ignite.configuration.TransactionConfiguration@7b8b0c78, cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=org.apache.ignite.configuration.ConnectorConfiguration@65993c30, odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysCacheMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=1700446208, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@6e9aa67d, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[2018-06-29 15:27:22,634][INFO ][main][BasicExamplesMultiNodeSelfTest0] Daemon mode: off
+[2018-06-29 15:27:22,635][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS: Windows 7 6.1 amd64
+[2018-06-29 15:27:22,635][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS user: admin
+[2018-06-29 15:27:22,636][INFO ][main][BasicExamplesMultiNodeSelfTest0] PID: 1204
+[2018-06-29 15:27:22,637][INFO ][main][BasicExamplesMultiNodeSelfTest0] Language runtime: Java Platform API Specification ver. 1.8
+[2018-06-29 15:27:22,637][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM information: Java(TM) SE Runtime Environment 1.8.0_131-b11 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.131-b11
+[2018-06-29 15:27:22,638][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM total memory: 1.8GB
+[2018-06-29 15:27:22,639][INFO ][main][BasicExamplesMultiNodeSelfTest0] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[2018-06-29 15:27:22,639][INFO ][main][BasicExamplesMultiNodeSelfTest0] Logger: GridTestLog4jLogger [quiet=false, config=null]
+[2018-06-29 15:27:22,640][INFO ][main][BasicExamplesMultiNodeSelfTest0] IGNITE_HOME=F:\openSource\apache-ignite-2.5.0-src
+[2018-06-29 15:27:22,640][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM arguments: [-Dmaven.home=EMBEDDED, -Dclassworlds.conf=D:\activity\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4543901511816151266.tmp, -Dmaven.multiModuleProjectDirectory=F:\openSource\apache-ignite-2.5.0-src\examples, -Dfile.encoding=GBK]
+[2018-06-29 15:27:22,640][INFO ][main][BasicExamplesMultiNodeSelfTest0] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemCacheMemorySize property to change the setting.
+[2018-06-29 15:27:22,761][INFO ][main][BasicExamplesMultiNodeSelfTest0] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[2018-06-29 15:27:22,768][INFO ][main][BasicExamplesMultiNodeSelfTest0] 3-rd party licenses can be found at: F:\openSource\apache-ignite-2.5.0-src\libs\licenses
+[2018-06-29 15:27:22,874][INFO ][main][IgnitePluginProcessor] Configured plugins:
+[2018-06-29 15:27:22,875][INFO ][main][IgnitePluginProcessor]   ^-- TestReconnectPlugin 1.0
+[2018-06-29 15:27:22,875][INFO ][main][IgnitePluginProcessor]   ^-- 
+[2018-06-29 15:27:22,875][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:27:22,875][INFO ][main][IgnitePluginProcessor]   ^-- StanByClusterTestProvider 1.0
+[2018-06-29 15:27:22,879][INFO ][main][IgnitePluginProcessor]   ^-- null
+[2018-06-29 15:27:22,879][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:27:22,883][INFO ][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0]]
+[2018-06-29 15:27:23,126][INFO ][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[2018-06-29 15:27:23,800][INFO ][main][BasicExamplesMultiNodeSelfTest0] Security status [authentication=off, tls/ssl=off]
+[2018-06-29 15:27:25,041][INFO ][main][ClientListenerProcessor] Client connector processor has started on TCP port 10801
+[2018-06-29 15:27:25,170][INFO ][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[2018-06-29 15:27:26,367][INFO ][main][BasicExamplesMultiNodeSelfTest0] Non-loopback local IPs: 192.168.3.1, 192.168.4.158, 192.168.91.1, fe80:0:0:0:0:5efe:c0a8:301%net12, fe80:0:0:0:0:5efe:c0a8:49e%net13, fe80:0:0:0:0:5efe:c0a8:5b01%net9, fe80:0:0:0:29e7:1f8b:f68:726%eth7, fe80:0:0:0:9cf2:6079:e2a7:599b%wlan0, fe80:0:0:0:b9f7:3637:e87b:8e1b%eth5, fe80:0:0:0:e0:0:0:0%net4, fe80:0:0:0:ed16:e37a:22d4:e543%eth6, fe80:0:0:0:f446:787b:3488:5e40%eth3
+[2018-06-29 15:27:26,368][INFO ][main][BasicExamplesMultiNodeSelfTest0] Enabled local MACs: 00000000000000E0, 005056C00001, 005056C00008, A088699D740C, A088699D7410, F8A96341E5BC
+[2018-06-29 15:27:26,440][INFO ][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0, locNodeId=b0624382-763b-4a92-8ade-e06bb5d4af65]
+[2018-06-29 15:27:31,684][INFO ][tcp-disco-srvr-#3%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35432]
+[2018-06-29 15:27:31,698][INFO ][tcp-disco-srvr-#3%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35432]
+[2018-06-29 15:27:31,699][INFO ][tcp-disco-sock-reader-#10%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35432, rmtPort=35432]
+[2018-06-29 15:27:31,700][INFO ][tcp-disco-sock-reader-#10%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35432, rmtPort=35432]
+[2018-06-29 15:27:31,705][INFO ][tcp-disco-srvr-#3%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35433]
+[2018-06-29 15:27:31,705][INFO ][tcp-disco-srvr-#3%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35433]
+[2018-06-29 15:27:31,706][INFO ][tcp-disco-sock-reader-#10%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35432, rmtPort=35432]
+[2018-06-29 15:27:31,706][INFO ][tcp-disco-sock-reader-#11%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35433, rmtPort=35433]
+[2018-06-29 15:27:31,706][INFO ][tcp-disco-sock-reader-#10%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35432, rmtPort=35432
+[2018-06-29 15:27:31,737][INFO ][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[2018-06-29 15:27:31,743][INFO ][tcp-disco-sock-reader-#11%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35433, rmtPort=35433
+[2018-06-29 15:27:36,754][INFO ][main][TcpDiscoverySpi] No verification for local node leave has been received from coordinator (will stop node anyway).
+[2018-06-29 15:27:37,015][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.5.0#20180524-sha1:86e110c750a340dc9be2d396415f0b80d7ed8813 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite instance name: examples.BasicExamplesMultiNodeSelfTest0
+>>> Grid uptime: 00:00:14.416
+
+
+[2018-06-29 15:27:37,020][INFO ][main][root] >>> Stopping test: BasicExamplesMultiNodeSelfTest#testRunnableExample in 17135 ms <<<
+]]></system-out>
+    <system-err><![CDATA[Can't load log handler "org.apache.ignite.logger.java.JavaLoggerFileHandler"
+java.lang.ClassNotFoundException: org.apache.ignite.logger.java.JavaLoggerFileHandler
+java.lang.ClassNotFoundException: org.apache.ignite.logger.java.JavaLoggerFileHandler
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	at java.util.logging.LogManager$5.run(LogManager.java:965)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.util.logging.LogManager.loadLoggerHandlers(LogManager.java:958)
+	at java.util.logging.LogManager.initializeGlobalHandlers(LogManager.java:1578)
+	at java.util.logging.LogManager.access$1500(LogManager.java:145)
+	at java.util.logging.LogManager$RootLogger.accessCheckedHandlers(LogManager.java:1667)
+	at java.util.logging.Logger.getHandlers(Logger.java:1777)
+	at org.apache.ignite.logger.java.JavaLogger.findHandler(JavaLogger.java:411)
+	at org.apache.ignite.logger.java.JavaLogger.configure(JavaLogger.java:241)
+	at org.apache.ignite.logger.java.JavaLogger.<init>(JavaLogger.java:181)
+	at org.apache.ignite.logger.java.JavaLogger.<init>(JavaLogger.java:135)
+	at org.apache.ignite.internal.LongJVMPauseDetector.<clinit>(LongJVMPauseDetector.java:44)
+	at org.apache.ignite.internal.IgniteKernal.<clinit>(IgniteKernal.java:305)
+	at org.apache.ignite.testframework.junits.GridTestKernalContext.<init>(GridTestKernalContext.java:61)
+	at org.apache.ignite.testframework.junits.GridTestKernalContext.<init>(GridTestKernalContext.java:46)
+	at org.apache.ignite.testframework.junits.IgniteTestResources.<init>(IgniteTestResources.java:91)
+	at org.apache.ignite.testframework.junits.GridAbstractTest$TestCounters.<init>(GridAbstractTest.java:2418)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.getTestCounters(GridAbstractTest.java:1980)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:483)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+[2018-06-29 15:27:22,761][WARN ][main][BasicExamplesMultiNodeSelfTest0] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[2018-06-29 15:27:22,813][WARN ][pub-#22%examples.BasicExamplesMultiNodeSelfTest0%][GridDiagnostic] Initial heap size is 128MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[2018-06-29 15:27:23,631][WARN ][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[2018-06-29 15:27:23,680][WARN ][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[2018-06-29 15:27:23,794][WARN ][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[2018-06-29 15:27:31,719][ERROR][main][BasicExamplesMultiNodeSelfTest0] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@430d3bf9], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=b0624382-763b-4a92-8ade-e06bb5d4af65]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+[2018-06-29 15:27:31,724][ERROR][main][BasicExamplesMultiNodeSelfTest0] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1725)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@430d3bf9], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	... 58 more
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=b0624382-763b-4a92-8ade-e06bb5d4af65]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+]]></system-err>
+  </testcase>
+  <testcase name="testClosureExample" classname="org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest" time="12.053">
+    <error message="Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]" type="org.apache.ignite.IgniteException">org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@550e427a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a81e621b-f2e3-4cd8-9859-0f542b849b79]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+</error>
+    <system-out><![CDATA[[2018-06-29 15:27:37,027][INFO ][main][root] >>> Starting test: BasicExamplesMultiNodeSelfTest#testClosureExample <<<
+[2018-06-29 15:27:37,028][INFO ][main][root] Config for remote nodes [name=ClosureExample, cfg=examples/config/example-ignite.xml, dflt=examples/config/example-ignite.xml]
+[2018-06-29 15:27:37,029][INFO ][main][FileSystemXmlApplicationContext] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@fdd1e25: startup date [Fri Jun 29 15:27:37 CST 2018]; root of context hierarchy
+[2018-06-29 15:27:37,030][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-ignite.xml]
+[2018-06-29 15:27:37,089][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-default.xml]
+[2018-06-29 15:27:37,238][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.5.0#20180524-sha1:86e110c7
+>>> 2018 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[2018-06-29 15:27:37,239][INFO ][main][BasicExamplesMultiNodeSelfTest0] Config URL: n/a
+[2018-06-29 15:27:37,243][INFO ][main][BasicExamplesMultiNodeSelfTest0] IgniteConfiguration [igniteInstanceName=examples.BasicExamplesMultiNodeSelfTest0, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=F:\openSource\apache-ignite-2.5.0-src, igniteWorkDir=F:\openSource\apache-ignite-2.5.0-src\work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@2bb4b203, nodeId=a81e621b-f2e3-4cd8-9859-0f542b849b79, marsh=org.apache.ignite.internal.binary.BinaryMarshaller@2c30a77d, marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=null, enableForcibleNodeKill=false, enableTroubleshootingLog=false, srvLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$2@2b457208, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, lsnr=null, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@1b93afe3[Count = 1], stopping=false, metricsLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener@74dc7276], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@5dfe38df, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [lsnr=null], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@5d2bd45a, addrRslvr=null, clientMode=false, rebalanceThreadPoolSize=1, txCfg=org.apache.ignite.configuration.TransactionConfiguration@5bc184ab, cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=org.apache.ignite.configuration.ConnectorConfiguration@4c190267, odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysCacheMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=1700446208, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@608de3fb, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[2018-06-29 15:27:37,243][INFO ][main][BasicExamplesMultiNodeSelfTest0] Daemon mode: off
+[2018-06-29 15:27:37,243][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS: Windows 7 6.1 amd64
+[2018-06-29 15:27:37,244][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS user: admin
+[2018-06-29 15:27:37,311][INFO ][main][BasicExamplesMultiNodeSelfTest0] PID: 1204
+[2018-06-29 15:27:37,312][INFO ][main][BasicExamplesMultiNodeSelfTest0] Language runtime: Java Platform API Specification ver. 1.8
+[2018-06-29 15:27:37,312][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM information: Java(TM) SE Runtime Environment 1.8.0_131-b11 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.131-b11
+[2018-06-29 15:27:37,312][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM total memory: 1.8GB
+[2018-06-29 15:27:37,312][INFO ][main][BasicExamplesMultiNodeSelfTest0] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[2018-06-29 15:27:37,312][INFO ][main][BasicExamplesMultiNodeSelfTest0] Logger: GridTestLog4jLogger [quiet=false, config=null]
+[2018-06-29 15:27:37,312][INFO ][main][BasicExamplesMultiNodeSelfTest0] IGNITE_HOME=F:\openSource\apache-ignite-2.5.0-src
+[2018-06-29 15:27:37,312][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM arguments: [-Dmaven.home=EMBEDDED, -Dclassworlds.conf=D:\activity\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4543901511816151266.tmp, -Dmaven.multiModuleProjectDirectory=F:\openSource\apache-ignite-2.5.0-src\examples, -Dfile.encoding=GBK]
+[2018-06-29 15:27:37,313][INFO ][main][BasicExamplesMultiNodeSelfTest0] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemCacheMemorySize property to change the setting.
+[2018-06-29 15:27:37,328][INFO ][main][BasicExamplesMultiNodeSelfTest0] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[2018-06-29 15:27:37,342][INFO ][main][BasicExamplesMultiNodeSelfTest0] 3-rd party licenses can be found at: F:\openSource\apache-ignite-2.5.0-src\libs\licenses
+[2018-06-29 15:27:37,367][INFO ][main][IgnitePluginProcessor] Configured plugins:
+[2018-06-29 15:27:37,377][INFO ][main][IgnitePluginProcessor]   ^-- TestReconnectPlugin 1.0
+[2018-06-29 15:27:37,377][INFO ][main][IgnitePluginProcessor]   ^-- 
+[2018-06-29 15:27:37,377][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:27:37,377][INFO ][main][IgnitePluginProcessor]   ^-- StanByClusterTestProvider 1.0
+[2018-06-29 15:27:37,377][INFO ][main][IgnitePluginProcessor]   ^-- null
+[2018-06-29 15:27:37,377][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:27:37,377][INFO ][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0]]
+[2018-06-29 15:27:37,399][INFO ][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[2018-06-29 15:27:37,409][INFO ][main][BasicExamplesMultiNodeSelfTest0] Security status [authentication=off, tls/ssl=off]
+[2018-06-29 15:27:37,471][INFO ][main][ClientListenerProcessor] Client connector processor has started on TCP port 10801
+[2018-06-29 15:27:37,492][INFO ][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[2018-06-29 15:27:38,901][INFO ][main][BasicExamplesMultiNodeSelfTest0] Non-loopback local IPs: 192.168.3.1, 192.168.4.158, 192.168.91.1, fe80:0:0:0:0:5efe:c0a8:301%net12, fe80:0:0:0:0:5efe:c0a8:49e%net13, fe80:0:0:0:0:5efe:c0a8:5b01%net9, fe80:0:0:0:29e7:1f8b:f68:726%eth7, fe80:0:0:0:9cf2:6079:e2a7:599b%wlan0, fe80:0:0:0:b9f7:3637:e87b:8e1b%eth5, fe80:0:0:0:e0:0:0:0%net4, fe80:0:0:0:ed16:e37a:22d4:e543%eth6, fe80:0:0:0:f446:787b:3488:5e40%eth3
+[2018-06-29 15:27:38,901][INFO ][main][BasicExamplesMultiNodeSelfTest0] Enabled local MACs: 00000000000000E0, 005056C00001, 005056C00008, A088699D740C, A088699D7410, F8A96341E5BC
+[2018-06-29 15:27:38,906][INFO ][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0, locNodeId=a81e621b-f2e3-4cd8-9859-0f542b849b79]
+[2018-06-29 15:27:44,020][INFO ][tcp-disco-srvr-#14%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35472]
+[2018-06-29 15:27:44,020][INFO ][tcp-disco-srvr-#14%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35472]
+[2018-06-29 15:27:44,022][INFO ][tcp-disco-sock-reader-#21%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35472, rmtPort=35472]
+[2018-06-29 15:27:44,023][INFO ][tcp-disco-sock-reader-#21%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35472, rmtPort=35472]
+[2018-06-29 15:27:44,024][INFO ][tcp-disco-srvr-#14%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35473]
+[2018-06-29 15:27:44,025][INFO ][tcp-disco-srvr-#14%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35473]
+[2018-06-29 15:27:44,025][INFO ][tcp-disco-sock-reader-#21%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35472, rmtPort=35472]
+[2018-06-29 15:27:44,025][INFO ][tcp-disco-sock-reader-#21%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35472, rmtPort=35472
+[2018-06-29 15:27:44,025][INFO ][tcp-disco-sock-reader-#22%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35473, rmtPort=35473]
+[2018-06-29 15:27:44,027][INFO ][tcp-disco-sock-reader-#22%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35473, rmtPort=35473
+[2018-06-29 15:27:44,052][INFO ][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[2018-06-29 15:27:49,065][INFO ][main][TcpDiscoverySpi] No verification for local node leave has been received from coordinator (will stop node anyway).
+[2018-06-29 15:27:49,077][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.5.0#20180524-sha1:86e110c750a340dc9be2d396415f0b80d7ed8813 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite instance name: examples.BasicExamplesMultiNodeSelfTest0
+>>> Grid uptime: 00:00:11.842
+
+
+[2018-06-29 15:27:49,080][INFO ][main][root] >>> Stopping test: BasicExamplesMultiNodeSelfTest#testClosureExample in 29195 ms <<<
+]]></system-out>
+    <system-err><![CDATA[[2018-06-29 15:27:37,328][WARN ][main][BasicExamplesMultiNodeSelfTest0] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[2018-06-29 15:27:37,345][WARN ][pub-#62%examples.BasicExamplesMultiNodeSelfTest0%][GridDiagnostic] Initial heap size is 128MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[2018-06-29 15:27:37,399][WARN ][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[2018-06-29 15:27:37,403][WARN ][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[2018-06-29 15:27:37,408][WARN ][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[2018-06-29 15:27:37,432][WARN ][main][IgniteH2Indexing] Custom H2 serialization is already configured, will override.
+[2018-06-29 15:27:44,032][ERROR][main][BasicExamplesMultiNodeSelfTest0] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@550e427a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a81e621b-f2e3-4cd8-9859-0f542b849b79]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+[2018-06-29 15:27:44,033][ERROR][main][BasicExamplesMultiNodeSelfTest0] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1725)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@550e427a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	... 58 more
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a81e621b-f2e3-4cd8-9859-0f542b849b79]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+]]></system-err>
+  </testcase>
+  <testcase name="testCallableExample" classname="org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest" time="11.44">
+    <error message="Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]" type="org.apache.ignite.IgniteException">org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@609c8e0d], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=116fcd12-f906-4721-b2e4-5ef9817f2e44]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+</error>
+    <system-out><![CDATA[[2018-06-29 15:27:49,081][INFO ][main][root] >>> Starting test: BasicExamplesMultiNodeSelfTest#testCallableExample <<<
+[2018-06-29 15:27:49,081][INFO ][main][root] Config for remote nodes [name=CallableExample, cfg=examples/config/example-ignite.xml, dflt=examples/config/example-ignite.xml]
+[2018-06-29 15:27:49,082][INFO ][main][FileSystemXmlApplicationContext] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@687a3bc8: startup date [Fri Jun 29 15:27:49 CST 2018]; root of context hierarchy
+[2018-06-29 15:27:49,083][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-ignite.xml]
+[2018-06-29 15:27:49,115][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-default.xml]
+[2018-06-29 15:27:49,181][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.5.0#20180524-sha1:86e110c7
+>>> 2018 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[2018-06-29 15:27:49,181][INFO ][main][BasicExamplesMultiNodeSelfTest0] Config URL: n/a
+[2018-06-29 15:27:49,182][INFO ][main][BasicExamplesMultiNodeSelfTest0] IgniteConfiguration [igniteInstanceName=examples.BasicExamplesMultiNodeSelfTest0, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=F:\openSource\apache-ignite-2.5.0-src, igniteWorkDir=F:\openSource\apache-ignite-2.5.0-src\work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@2bb4b203, nodeId=116fcd12-f906-4721-b2e4-5ef9817f2e44, marsh=org.apache.ignite.internal.binary.BinaryMarshaller@27e0aedb, marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=null, enableForcibleNodeKill=false, enableTroubleshootingLog=false, srvLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$2@1669899, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, lsnr=null, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@38515041[Count = 1], stopping=false, metricsLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener@5a01122a], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@78b5e9c7, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [lsnr=null], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@4da20418, addrRslvr=null, clientMode=false, rebalanceThreadPoolSize=1, txCfg=org.apache.ignite.configuration.TransactionConfiguration@7fc386b5, cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=org.apache.ignite.configuration.ConnectorConfiguration@2d814b25, odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysCacheMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=1700446208, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@7a2d6483, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[2018-06-29 15:27:49,183][INFO ][main][BasicExamplesMultiNodeSelfTest0] Daemon mode: off
+[2018-06-29 15:27:49,183][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS: Windows 7 6.1 amd64
+[2018-06-29 15:27:49,183][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS user: admin
+[2018-06-29 15:27:49,188][INFO ][main][BasicExamplesMultiNodeSelfTest0] PID: 1204
+[2018-06-29 15:27:49,188][INFO ][main][BasicExamplesMultiNodeSelfTest0] Language runtime: Java Platform API Specification ver. 1.8
+[2018-06-29 15:27:49,188][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM information: Java(TM) SE Runtime Environment 1.8.0_131-b11 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.131-b11
+[2018-06-29 15:27:49,189][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM total memory: 1.8GB
+[2018-06-29 15:27:49,190][INFO ][main][BasicExamplesMultiNodeSelfTest0] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[2018-06-29 15:27:49,190][INFO ][main][BasicExamplesMultiNodeSelfTest0] Logger: GridTestLog4jLogger [quiet=false, config=null]
+[2018-06-29 15:27:49,190][INFO ][main][BasicExamplesMultiNodeSelfTest0] IGNITE_HOME=F:\openSource\apache-ignite-2.5.0-src
+[2018-06-29 15:27:49,190][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM arguments: [-Dmaven.home=EMBEDDED, -Dclassworlds.conf=D:\activity\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4543901511816151266.tmp, -Dmaven.multiModuleProjectDirectory=F:\openSource\apache-ignite-2.5.0-src\examples, -Dfile.encoding=GBK]
+[2018-06-29 15:27:49,190][INFO ][main][BasicExamplesMultiNodeSelfTest0] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemCacheMemorySize property to change the setting.
+[2018-06-29 15:27:49,190][INFO ][main][BasicExamplesMultiNodeSelfTest0] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[2018-06-29 15:27:49,192][INFO ][main][BasicExamplesMultiNodeSelfTest0] 3-rd party licenses can be found at: F:\openSource\apache-ignite-2.5.0-src\libs\licenses
+[2018-06-29 15:27:49,200][INFO ][main][IgnitePluginProcessor] Configured plugins:
+[2018-06-29 15:27:49,200][INFO ][main][IgnitePluginProcessor]   ^-- TestReconnectPlugin 1.0
+[2018-06-29 15:27:49,200][INFO ][main][IgnitePluginProcessor]   ^-- 
+[2018-06-29 15:27:49,200][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:27:49,200][INFO ][main][IgnitePluginProcessor]   ^-- StanByClusterTestProvider 1.0
+[2018-06-29 15:27:49,200][INFO ][main][IgnitePluginProcessor]   ^-- null
+[2018-06-29 15:27:49,200][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:27:49,204][INFO ][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0]]
+[2018-06-29 15:27:49,258][INFO ][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[2018-06-29 15:27:49,279][INFO ][main][BasicExamplesMultiNodeSelfTest0] Security status [authentication=off, tls/ssl=off]
+[2018-06-29 15:27:49,308][INFO ][main][ClientListenerProcessor] Client connector processor has started on TCP port 10801
+[2018-06-29 15:27:49,356][INFO ][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[2018-06-29 15:27:50,997][INFO ][main][BasicExamplesMultiNodeSelfTest0] Non-loopback local IPs: 192.168.3.1, 192.168.4.158, 192.168.91.1, fe80:0:0:0:0:5efe:c0a8:301%net12, fe80:0:0:0:0:5efe:c0a8:49e%net13, fe80:0:0:0:0:5efe:c0a8:5b01%net9, fe80:0:0:0:29e7:1f8b:f68:726%eth7, fe80:0:0:0:9cf2:6079:e2a7:599b%wlan0, fe80:0:0:0:b9f7:3637:e87b:8e1b%eth5, fe80:0:0:0:e0:0:0:0%net4, fe80:0:0:0:ed16:e37a:22d4:e543%eth6, fe80:0:0:0:f446:787b:3488:5e40%eth3
+[2018-06-29 15:27:50,997][INFO ][main][BasicExamplesMultiNodeSelfTest0] Enabled local MACs: 00000000000000E0, 005056C00001, 005056C00008, A088699D740C, A088699D7410, F8A96341E5BC
+[2018-06-29 15:27:51,004][INFO ][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0, locNodeId=116fcd12-f906-4721-b2e4-5ef9817f2e44]
+[2018-06-29 15:27:55,453][INFO ][tcp-disco-srvr-#25%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35511]
+[2018-06-29 15:27:55,454][INFO ][tcp-disco-srvr-#25%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35511]
+[2018-06-29 15:27:55,462][INFO ][tcp-disco-sock-reader-#32%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35511, rmtPort=35511]
+[2018-06-29 15:27:55,462][INFO ][tcp-disco-sock-reader-#32%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35511, rmtPort=35511]
+[2018-06-29 15:27:55,463][INFO ][tcp-disco-sock-reader-#32%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35511, rmtPort=35511]
+[2018-06-29 15:27:55,463][INFO ][tcp-disco-sock-reader-#32%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35511, rmtPort=35511
+[2018-06-29 15:27:55,464][INFO ][tcp-disco-srvr-#25%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35512]
+[2018-06-29 15:27:55,464][INFO ][tcp-disco-srvr-#25%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35512]
+[2018-06-29 15:27:55,466][INFO ][tcp-disco-sock-reader-#33%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35512, rmtPort=35512]
+[2018-06-29 15:27:55,470][INFO ][tcp-disco-sock-reader-#33%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35512, rmtPort=35512
+[2018-06-29 15:27:55,480][INFO ][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[2018-06-29 15:28:00,497][INFO ][main][TcpDiscoverySpi] No verification for local node leave has been received from coordinator (will stop node anyway).
+[2018-06-29 15:28:00,511][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.5.0#20180524-sha1:86e110c750a340dc9be2d396415f0b80d7ed8813 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite instance name: examples.BasicExamplesMultiNodeSelfTest0
+>>> Grid uptime: 00:00:11.330
+
+
+[2018-06-29 15:28:00,520][INFO ][main][root] >>> Stopping test: BasicExamplesMultiNodeSelfTest#testCallableExample in 40635 ms <<<
+]]></system-out>
+    <system-err><![CDATA[[2018-06-29 15:27:49,191][WARN ][main][BasicExamplesMultiNodeSelfTest0] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[2018-06-29 15:27:49,224][WARN ][pub-#102%examples.BasicExamplesMultiNodeSelfTest0%][GridDiagnostic] Initial heap size is 128MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[2018-06-29 15:27:49,259][WARN ][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[2018-06-29 15:27:49,274][WARN ][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[2018-06-29 15:27:49,278][WARN ][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[2018-06-29 15:27:49,291][WARN ][main][IgniteH2Indexing] Custom H2 serialization is already configured, will override.
+[2018-06-29 15:27:55,472][ERROR][main][BasicExamplesMultiNodeSelfTest0] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@609c8e0d], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=116fcd12-f906-4721-b2e4-5ef9817f2e44]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+[2018-06-29 15:27:55,473][ERROR][main][BasicExamplesMultiNodeSelfTest0] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1725)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@609c8e0d], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	... 58 more
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=116fcd12-f906-4721-b2e4-5ef9817f2e44]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+]]></system-err>
+  </testcase>
+  <testcase name="testExecutorExample" classname="org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest" time="15.09">
+    <error message="Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]" type="org.apache.ignite.IgniteException">org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@66db5a9a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a36538fc-540c-47df-9a21-ee17ab9d6706]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+</error>
+    <system-out><![CDATA[[2018-06-29 15:28:00,521][INFO ][main][root] >>> Starting test: BasicExamplesMultiNodeSelfTest#testExecutorExample <<<
+[2018-06-29 15:28:00,521][INFO ][main][root] Config for remote nodes [name=ExecutorExample, cfg=examples/config/example-ignite.xml, dflt=examples/config/example-ignite.xml]
+[2018-06-29 15:28:00,521][INFO ][main][FileSystemXmlApplicationContext] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@73051634: startup date [Fri Jun 29 15:28:00 CST 2018]; root of context hierarchy
+[2018-06-29 15:28:00,522][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-ignite.xml]
+[2018-06-29 15:28:00,535][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-default.xml]
+[2018-06-29 15:28:00,600][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.5.0#20180524-sha1:86e110c7
+>>> 2018 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[2018-06-29 15:28:00,601][INFO ][main][BasicExamplesMultiNodeSelfTest0] Config URL: n/a
+[2018-06-29 15:28:00,601][INFO ][main][BasicExamplesMultiNodeSelfTest0] IgniteConfiguration [igniteInstanceName=examples.BasicExamplesMultiNodeSelfTest0, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=F:\openSource\apache-ignite-2.5.0-src, igniteWorkDir=F:\openSource\apache-ignite-2.5.0-src\work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@2bb4b203, nodeId=a36538fc-540c-47df-9a21-ee17ab9d6706, marsh=org.apache.ignite.internal.binary.BinaryMarshaller@5eb4764b, marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=null, enableForcibleNodeKill=false, enableTroubleshootingLog=false, srvLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$2@64f5bb1b, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, lsnr=null, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@5d16941b[Count = 1], stopping=false, metricsLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener@232cf070], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@5e57dc70, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [lsnr=null], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@17b399c2, addrRslvr=null, clientMode=false, rebalanceThreadPoolSize=1, txCfg=org.apache.ignite.configuration.TransactionConfiguration@7e6c7163, cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=org.apache.ignite.configuration.ConnectorConfiguration@3a87b1ae, odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysCacheMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=1700446208, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@5ad34ed2, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[2018-06-29 15:28:00,617][INFO ][main][BasicExamplesMultiNodeSelfTest0] Daemon mode: off
+[2018-06-29 15:28:00,617][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS: Windows 7 6.1 amd64
+[2018-06-29 15:28:00,617][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS user: admin
+[2018-06-29 15:28:00,644][INFO ][main][BasicExamplesMultiNodeSelfTest0] PID: 1204
+[2018-06-29 15:28:00,644][INFO ][main][BasicExamplesMultiNodeSelfTest0] Language runtime: Java Platform API Specification ver. 1.8
+[2018-06-29 15:28:00,644][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM information: Java(TM) SE Runtime Environment 1.8.0_131-b11 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.131-b11
+[2018-06-29 15:28:00,644][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM total memory: 1.8GB
+[2018-06-29 15:28:00,644][INFO ][main][BasicExamplesMultiNodeSelfTest0] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[2018-06-29 15:28:00,645][INFO ][main][BasicExamplesMultiNodeSelfTest0] Logger: GridTestLog4jLogger [quiet=false, config=null]
+[2018-06-29 15:28:00,645][INFO ][main][BasicExamplesMultiNodeSelfTest0] IGNITE_HOME=F:\openSource\apache-ignite-2.5.0-src
+[2018-06-29 15:28:00,645][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM arguments: [-Dmaven.home=EMBEDDED, -Dclassworlds.conf=D:\activity\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4543901511816151266.tmp, -Dmaven.multiModuleProjectDirectory=F:\openSource\apache-ignite-2.5.0-src\examples, -Dfile.encoding=GBK]
+[2018-06-29 15:28:00,645][INFO ][main][BasicExamplesMultiNodeSelfTest0] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemCacheMemorySize property to change the setting.
+[2018-06-29 15:28:00,645][INFO ][main][BasicExamplesMultiNodeSelfTest0] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[2018-06-29 15:28:00,655][INFO ][main][BasicExamplesMultiNodeSelfTest0] 3-rd party licenses can be found at: F:\openSource\apache-ignite-2.5.0-src\libs\licenses
+[2018-06-29 15:28:00,664][INFO ][main][IgnitePluginProcessor] Configured plugins:
+[2018-06-29 15:28:00,664][INFO ][main][IgnitePluginProcessor]   ^-- TestReconnectPlugin 1.0
+[2018-06-29 15:28:00,664][INFO ][main][IgnitePluginProcessor]   ^-- 
+[2018-06-29 15:28:00,664][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:28:00,664][INFO ][main][IgnitePluginProcessor]   ^-- StanByClusterTestProvider 1.0
+[2018-06-29 15:28:00,664][INFO ][main][IgnitePluginProcessor]   ^-- null
+[2018-06-29 15:28:00,664][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:28:00,664][INFO ][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0]]
+[2018-06-29 15:28:00,690][INFO ][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[2018-06-29 15:28:00,699][INFO ][main][BasicExamplesMultiNodeSelfTest0] Security status [authentication=off, tls/ssl=off]
+[2018-06-29 15:28:00,741][INFO ][main][ClientListenerProcessor] Client connector processor has started on TCP port 10801
+[2018-06-29 15:28:00,771][INFO ][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[2018-06-29 15:28:02,457][INFO ][main][BasicExamplesMultiNodeSelfTest0] Non-loopback local IPs: 192.168.3.1, 192.168.4.158, 192.168.91.1, fe80:0:0:0:0:5efe:c0a8:301%net12, fe80:0:0:0:0:5efe:c0a8:49e%net13, fe80:0:0:0:0:5efe:c0a8:5b01%net9, fe80:0:0:0:29e7:1f8b:f68:726%eth7, fe80:0:0:0:9cf2:6079:e2a7:599b%wlan0, fe80:0:0:0:b9f7:3637:e87b:8e1b%eth5, fe80:0:0:0:e0:0:0:0%net4, fe80:0:0:0:ed16:e37a:22d4:e543%eth6, fe80:0:0:0:f446:787b:3488:5e40%eth3
+[2018-06-29 15:28:02,457][INFO ][main][BasicExamplesMultiNodeSelfTest0] Enabled local MACs: 00000000000000E0, 005056C00001, 005056C00008, A088699D740C, A088699D7410, F8A96341E5BC
+[2018-06-29 15:28:02,462][INFO ][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0, locNodeId=a36538fc-540c-47df-9a21-ee17ab9d6706]
+[2018-06-29 15:28:10,558][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35558]
+[2018-06-29 15:28:10,562][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35558]
+[2018-06-29 15:28:10,563][INFO ][tcp-disco-sock-reader-#43%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35558, rmtPort=35558]
+[2018-06-29 15:28:10,564][INFO ][tcp-disco-sock-reader-#43%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35558, rmtPort=35558]
+[2018-06-29 15:28:10,564][INFO ][tcp-disco-sock-reader-#43%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35558, rmtPort=35558]
+[2018-06-29 15:28:10,564][INFO ][tcp-disco-sock-reader-#43%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35558, rmtPort=35558
+[2018-06-29 15:28:10,566][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35559]
+[2018-06-29 15:28:10,566][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35559]
+[2018-06-29 15:28:10,566][INFO ][tcp-disco-sock-reader-#44%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35559, rmtPort=35559]
+[2018-06-29 15:28:10,570][INFO ][tcp-disco-sock-reader-#44%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35559, rmtPort=35559
+[2018-06-29 15:28:10,581][INFO ][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[2018-06-29 15:28:12,457][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35560]
+[2018-06-29 15:28:12,458][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35560]
+[2018-06-29 15:28:12,458][INFO ][tcp-disco-sock-reader-#45%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35560, rmtPort=35560]
+[2018-06-29 15:28:12,459][INFO ][tcp-disco-sock-reader-#45%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35560, rmtPort=35560
+[2018-06-29 15:28:12,660][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35561]
+[2018-06-29 15:28:12,661][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35561]
+[2018-06-29 15:28:12,661][INFO ][tcp-disco-sock-reader-#46%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35561, rmtPort=35561]
+[2018-06-29 15:28:12,662][INFO ][tcp-disco-sock-reader-#46%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35561, rmtPort=35561
+[2018-06-29 15:28:12,862][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35562]
+[2018-06-29 15:28:12,863][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35562]
+[2018-06-29 15:28:12,864][INFO ][tcp-disco-sock-reader-#47%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35562, rmtPort=35562]
+[2018-06-29 15:28:12,865][INFO ][tcp-disco-sock-reader-#47%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35562, rmtPort=35562
+[2018-06-29 15:28:13,066][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35563]
+[2018-06-29 15:28:13,066][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35563]
+[2018-06-29 15:28:13,067][INFO ][tcp-disco-sock-reader-#48%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35563, rmtPort=35563]
+[2018-06-29 15:28:13,067][INFO ][tcp-disco-sock-reader-#48%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35563, rmtPort=35563
+[2018-06-29 15:28:13,267][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35564]
+[2018-06-29 15:28:13,267][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35564]
+[2018-06-29 15:28:13,268][INFO ][tcp-disco-sock-reader-#49%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35564, rmtPort=35564]
+[2018-06-29 15:28:13,268][INFO ][tcp-disco-sock-reader-#49%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35564, rmtPort=35564
+[2018-06-29 15:28:13,470][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35565]
+[2018-06-29 15:28:13,470][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35565]
+[2018-06-29 15:28:13,473][INFO ][tcp-disco-sock-reader-#50%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35565, rmtPort=35565]
+[2018-06-29 15:28:13,477][INFO ][tcp-disco-sock-reader-#50%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35565, rmtPort=35565
+[2018-06-29 15:28:13,675][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35566]
+[2018-06-29 15:28:13,676][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35566]
+[2018-06-29 15:28:13,677][INFO ][tcp-disco-sock-reader-#51%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35566, rmtPort=35566]
+[2018-06-29 15:28:13,678][INFO ][tcp-disco-sock-reader-#51%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35566, rmtPort=35566
+[2018-06-29 15:28:13,879][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35567]
+[2018-06-29 15:28:13,880][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35567]
+[2018-06-29 15:28:13,880][INFO ][tcp-disco-sock-reader-#52%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35567, rmtPort=35567]
+[2018-06-29 15:28:13,881][INFO ][tcp-disco-sock-reader-#52%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35567, rmtPort=35567
+[2018-06-29 15:28:14,082][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35568]
+[2018-06-29 15:28:14,082][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35568]
+[2018-06-29 15:28:14,096][INFO ][tcp-disco-sock-reader-#53%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35568, rmtPort=35568]
+[2018-06-29 15:28:14,096][INFO ][tcp-disco-sock-reader-#53%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35568, rmtPort=35568
+[2018-06-29 15:28:14,296][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35569]
+[2018-06-29 15:28:14,297][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35569]
+[2018-06-29 15:28:14,297][INFO ][tcp-disco-sock-reader-#54%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35569, rmtPort=35569]
+[2018-06-29 15:28:14,298][INFO ][tcp-disco-sock-reader-#54%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35569, rmtPort=35569
+[2018-06-29 15:28:14,498][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35570]
+[2018-06-29 15:28:14,499][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35570]
+[2018-06-29 15:28:14,500][INFO ][tcp-disco-sock-reader-#55%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35570, rmtPort=35570]
+[2018-06-29 15:28:14,501][INFO ][tcp-disco-sock-reader-#55%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35570, rmtPort=35570
+[2018-06-29 15:28:14,702][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35571]
+[2018-06-29 15:28:14,702][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35571]
+[2018-06-29 15:28:14,703][INFO ][tcp-disco-sock-reader-#56%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35571, rmtPort=35571]
+[2018-06-29 15:28:14,704][INFO ][tcp-disco-sock-reader-#56%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35571, rmtPort=35571
+[2018-06-29 15:28:14,904][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35572]
+[2018-06-29 15:28:14,904][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35572]
+[2018-06-29 15:28:14,905][INFO ][tcp-disco-sock-reader-#57%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35572, rmtPort=35572]
+[2018-06-29 15:28:14,914][INFO ][tcp-disco-sock-reader-#57%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35572, rmtPort=35572
+[2018-06-29 15:28:15,114][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35573]
+[2018-06-29 15:28:15,115][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35573]
+[2018-06-29 15:28:15,115][INFO ][tcp-disco-sock-reader-#58%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35573, rmtPort=35573]
+[2018-06-29 15:28:15,115][INFO ][tcp-disco-sock-reader-#58%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35573, rmtPort=35573
+[2018-06-29 15:28:15,316][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35574]
+[2018-06-29 15:28:15,316][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35574]
+[2018-06-29 15:28:15,317][INFO ][tcp-disco-sock-reader-#59%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35574, rmtPort=35574]
+[2018-06-29 15:28:15,317][INFO ][tcp-disco-sock-reader-#59%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35574, rmtPort=35574
+[2018-06-29 15:28:15,519][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.4.158, rmtPort=35575]
+[2018-06-29 15:28:15,519][INFO ][tcp-disco-srvr-#36%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.4.158, rmtPort=35575]
+[2018-06-29 15:28:15,519][INFO ][tcp-disco-sock-reader-#60%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.4.158:35575, rmtPort=35575]
+[2018-06-29 15:28:15,520][INFO ][tcp-disco-sock-reader-#60%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.4.158:35575, rmtPort=35575
+[2018-06-29 15:28:15,596][INFO ][main][TcpDiscoverySpi] No verification for local node leave has been received from coordinator (will stop node anyway).
+[2018-06-29 15:28:15,607][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.5.0#20180524-sha1:86e110c750a340dc9be2d396415f0b80d7ed8813 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite instance name: examples.BasicExamplesMultiNodeSelfTest0
+>>> Grid uptime: 00:00:15.013
+
+
+[2018-06-29 15:28:15,611][INFO ][main][root] >>> Stopping test: BasicExamplesMultiNodeSelfTest#testExecutorExample in 55726 ms <<<
+]]></system-out>
+    <system-err><![CDATA[[2018-06-29 15:28:00,645][WARN ][main][BasicExamplesMultiNodeSelfTest0] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[2018-06-29 15:28:00,672][WARN ][pub-#142%examples.BasicExamplesMultiNodeSelfTest0%][GridDiagnostic] Initial heap size is 128MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[2018-06-29 15:28:00,690][WARN ][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[2018-06-29 15:28:00,692][WARN ][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[2018-06-29 15:28:00,698][WARN ][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[2018-06-29 15:28:00,711][WARN ][main][IgniteH2Indexing] Custom H2 serialization is already configured, will override.
+[2018-06-29 15:28:10,571][ERROR][main][BasicExamplesMultiNodeSelfTest0] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@66db5a9a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a36538fc-540c-47df-9a21-ee17ab9d6706]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+[2018-06-29 15:28:10,573][ERROR][main][BasicExamplesMultiNodeSelfTest0] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1725)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@66db5a9a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	... 58 more
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a36538fc-540c-47df-9a21-ee17ab9d6706]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+]]></system-err>
+  </testcase>
+  <testcase name="testBroadcastExample" classname="org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest" time="11.087">
+    <error message="Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]" type="org.apache.ignite.IgniteException">org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@3f2be1a2], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=65b4b127-48e8-4c32-aada-0d7af3741d78]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+</error>
+    <system-out><![CDATA[[2018-06-29 15:28:15,611][INFO ][main][root] >>> Starting test: BasicExamplesMultiNodeSelfTest#testBroadcastExample <<<
+[2018-06-29 15:28:15,611][INFO ][main][root] Config for remote nodes [name=BroadcastExample, cfg=examples/config/example-ignite.xml, dflt=examples/config/example-ignite.xml]
+[2018-06-29 15:28:15,612][INFO ][main][FileSystemXmlApplicationContext] Refreshing org.springframework.context.support.FileSystemXmlApplicationContext@2c18bd39: startup date [Fri Jun 29 15:28:15 CST 2018]; root of context hierarchy
+[2018-06-29 15:28:15,612][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-ignite.xml]
+[2018-06-29 15:28:15,630][INFO ][main][XmlBeanDefinitionReader] Loading XML bean definitions from URL [file:/F:/openSource/apache-ignite-2.5.0-src/examples/config/example-default.xml]
+[2018-06-29 15:28:15,702][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>>    __________  ________________  
+>>>   /  _/ ___/ |/ /  _/_  __/ __/  
+>>>  _/ // (7 7    // /  / / / _/    
+>>> /___/\___/_/|_/___/ /_/ /___/   
+>>> 
+>>> ver. 2.5.0#20180524-sha1:86e110c7
+>>> 2018 Copyright(C) Apache Software Foundation
+>>> 
+>>> Ignite documentation: http://ignite.apache.org
+
+[2018-06-29 15:28:15,702][INFO ][main][BasicExamplesMultiNodeSelfTest0] Config URL: n/a
+[2018-06-29 15:28:15,703][INFO ][main][BasicExamplesMultiNodeSelfTest0] IgniteConfiguration [igniteInstanceName=examples.BasicExamplesMultiNodeSelfTest0, pubPoolSize=8, svcPoolSize=8, callbackPoolSize=8, stripedPoolSize=8, sysPoolSize=8, mgmtPoolSize=4, igfsPoolSize=4, dataStreamerPoolSize=8, utilityCachePoolSize=8, utilityCacheKeepAliveTime=60000, p2pPoolSize=2, qryPoolSize=8, igniteHome=F:\openSource\apache-ignite-2.5.0-src, igniteWorkDir=F:\openSource\apache-ignite-2.5.0-src\work, mbeanSrv=com.sun.jmx.mbeanserver.JmxMBeanServer@2bb4b203, nodeId=65b4b127-48e8-4c32-aada-0d7af3741d78, marsh=org.apache.ignite.internal.binary.BinaryMarshaller@4e3d2d76, marshLocJobs=false, daemon=false, p2pEnabled=true, netTimeout=5000, sndRetryDelay=1000, sndRetryCnt=3, metricsHistSize=10000, metricsUpdateFreq=2000, metricsExpTime=9223372036854775807, discoSpi=TcpDiscoverySpi [addrRslvr=null, sockTimeout=0, ackTimeout=0, marsh=null, reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null], segPlc=STOP, segResolveAttempts=2, waitForSegOnStart=true, allResolversPassReq=true, segChkFreq=10000, commSpi=TcpCommunicationSpi [connectGate=null, connPlc=null, enableForcibleNodeKill=false, enableTroubleshootingLog=false, srvLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi$2@14d59f0e, locAddr=null, locHost=null, locPort=47100, locPortRange=100, shmemPort=-1, directBuf=true, directSndBuf=false, idleConnTimeout=600000, connTimeout=5000, maxConnTimeout=600000, reconCnt=10, sockSndBuf=32768, sockRcvBuf=32768, msgQueueLimit=0, slowClientQueueLimit=0, nioSrvr=null, shmemSrv=null, usePairedConnections=false, connectionsPerNode=1, tcpNoDelay=true, filterReachableAddresses=false, ackSndThreshold=32, unackedMsgsBufSize=0, sockWriteTimeout=2000, lsnr=null, boundTcpPort=-1, boundTcpShmemPort=-1, selectorsCnt=4, selectorSpins=0, addrRslvr=null, ctxInitLatch=java.util.concurrent.CountDownLatch@24de6541[Count = 1], stopping=false, metricsLsnr=org.apache.ignite.spi.communication.tcp.TcpCommunicationMetricsListener@37559a0b], evtSpi=org.apache.ignite.spi.eventstorage.NoopEventStorageSpi@10a4570a, colSpi=NoopCollisionSpi [], deploySpi=LocalDeploymentSpi [lsnr=null], indexingSpi=org.apache.ignite.spi.indexing.noop.NoopIndexingSpi@283187ff, addrRslvr=null, clientMode=false, rebalanceThreadPoolSize=1, txCfg=org.apache.ignite.configuration.TransactionConfiguration@7f121bd5, cacheSanityCheckEnabled=true, discoStartupDelay=60000, deployMode=SHARED, p2pMissedCacheSize=100, locHost=null, timeSrvPortBase=31100, timeSrvPortRange=100, failureDetectionTimeout=10000, clientFailureDetectionTimeout=30000, metricsLogFreq=60000, hadoopCfg=null, connectorCfg=org.apache.ignite.configuration.ConnectorConfiguration@640c43fe, odbcCfg=null, warmupClos=null, atomicCfg=AtomicConfiguration [seqReserveSize=1000, cacheMode=PARTITIONED, backups=1, aff=null, grpName=null], classLdr=null, sslCtxFactory=null, platformCfg=null, binaryCfg=null, memCfg=null, pstCfg=null, dsCfg=DataStorageConfiguration [sysRegionInitSize=41943040, sysCacheMaxSize=104857600, pageSize=0, concLvl=0, dfltDataRegConf=DataRegionConfiguration [name=default, maxSize=1700446208, initSize=268435456, swapPath=null, pageEvictionMode=DISABLED, evictionThreshold=0.9, emptyPagesPoolSize=100, metricsEnabled=false, metricsSubIntervalCount=5, metricsRateTimeInterval=60000, persistenceEnabled=false, checkpointPageBufSize=0], storagePath=null, checkpointFreq=180000, lockWaitTime=10000, checkpointThreads=4, checkpointWriteOrder=SEQUENTIAL, walHistSize=20, walSegments=10, walSegmentSize=67108864, walPath=db/wal, walArchivePath=db/wal/archive, metricsEnabled=false, walMode=LOG_ONLY, walTlbSize=131072, walBuffSize=0, walFlushFreq=2000, walFsyncDelay=1000, walRecordIterBuffSize=67108864, alwaysWriteFullPages=false, fileIOFactory=org.apache.ignite.internal.processors.cache.persistence.file.AsyncFileIOFactory@56a25472, metricsSubIntervalCnt=5, metricsRateTimeInterval=60000, walAutoArchiveAfterInactivity=-1, writeThrottlingEnabled=false, walCompactionEnabled=false], activeOnStart=true, autoActivation=true, longQryWarnTimeout=3000, sqlConnCfg=null, cliConnCfg=ClientConnectorConfiguration [host=null, port=10800, portRange=100, sockSndBufSize=0, sockRcvBufSize=0, tcpNoDelay=true, maxOpenCursorsPerConn=128, threadPoolSize=8, idleTimeout=0, jdbcEnabled=true, odbcEnabled=true, thinCliEnabled=true, sslEnabled=false, useIgniteSslCtxFactory=true, sslClientAuth=false, sslCtxFactory=null], authEnabled=false, failureHnd=null, commFailureRslvr=null]
+[2018-06-29 15:28:15,706][INFO ][main][BasicExamplesMultiNodeSelfTest0] Daemon mode: off
+[2018-06-29 15:28:15,706][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS: Windows 7 6.1 amd64
+[2018-06-29 15:28:15,706][INFO ][main][BasicExamplesMultiNodeSelfTest0] OS user: admin
+[2018-06-29 15:28:15,709][INFO ][main][BasicExamplesMultiNodeSelfTest0] PID: 1204
+[2018-06-29 15:28:15,709][INFO ][main][BasicExamplesMultiNodeSelfTest0] Language runtime: Java Platform API Specification ver. 1.8
+[2018-06-29 15:28:15,709][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM information: Java(TM) SE Runtime Environment 1.8.0_131-b11 Oracle Corporation Java HotSpot(TM) 64-Bit Server VM 25.131-b11
+[2018-06-29 15:28:15,710][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM total memory: 1.8GB
+[2018-06-29 15:28:15,710][INFO ][main][BasicExamplesMultiNodeSelfTest0] Remote Management [restart: off, REST: on, JMX (remote: off)]
+[2018-06-29 15:28:15,710][INFO ][main][BasicExamplesMultiNodeSelfTest0] Logger: GridTestLog4jLogger [quiet=false, config=null]
+[2018-06-29 15:28:15,710][INFO ][main][BasicExamplesMultiNodeSelfTest0] IGNITE_HOME=F:\openSource\apache-ignite-2.5.0-src
+[2018-06-29 15:28:15,710][INFO ][main][BasicExamplesMultiNodeSelfTest0] VM arguments: [-Dmaven.home=EMBEDDED, -Dclassworlds.conf=D:\activity\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf4543901511816151266.tmp, -Dmaven.multiModuleProjectDirectory=F:\openSource\apache-ignite-2.5.0-src\examples, -Dfile.encoding=GBK]
+[2018-06-29 15:28:15,710][INFO ][main][BasicExamplesMultiNodeSelfTest0] System cache's DataRegion size is configured to 40 MB. Use DataStorageConfiguration.systemCacheMemorySize property to change the setting.
+[2018-06-29 15:28:15,710][INFO ][main][BasicExamplesMultiNodeSelfTest0] Configured caches [in 'sysMemPlc' dataRegion: ['ignite-sys-cache']]
+[2018-06-29 15:28:15,714][INFO ][main][BasicExamplesMultiNodeSelfTest0] 3-rd party licenses can be found at: F:\openSource\apache-ignite-2.5.0-src\libs\licenses
+[2018-06-29 15:28:15,721][INFO ][main][IgnitePluginProcessor] Configured plugins:
+[2018-06-29 15:28:15,721][INFO ][main][IgnitePluginProcessor]   ^-- TestReconnectPlugin 1.0
+[2018-06-29 15:28:15,721][INFO ][main][IgnitePluginProcessor]   ^-- 
+[2018-06-29 15:28:15,721][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:28:15,721][INFO ][main][IgnitePluginProcessor]   ^-- StanByClusterTestProvider 1.0
+[2018-06-29 15:28:15,721][INFO ][main][IgnitePluginProcessor]   ^-- null
+[2018-06-29 15:28:15,721][INFO ][main][IgnitePluginProcessor] 
+[2018-06-29 15:28:15,721][INFO ][main][FailureProcessor] Configured failure handler: [hnd=StopNodeOrHaltFailureHandler [tryStop=false, timeout=0]]
+[2018-06-29 15:28:15,751][INFO ][main][TcpCommunicationSpi] Successfully bound communication NIO server to TCP port [port=47101, locHost=0.0.0.0/0.0.0.0, selectorsCnt=4, selectorSpins=0, pairedConn=false]
+[2018-06-29 15:28:15,806][INFO ][main][BasicExamplesMultiNodeSelfTest0] Security status [authentication=off, tls/ssl=off]
+[2018-06-29 15:28:15,833][INFO ][main][ClientListenerProcessor] Client connector processor has started on TCP port 10801
+[2018-06-29 15:28:15,891][INFO ][main][GridTcpRestProtocol] Command protocol successfully started [name=TCP binary, host=0.0.0.0/0.0.0.0, port=11212]
+[2018-06-29 15:28:17,488][INFO ][main][BasicExamplesMultiNodeSelfTest0] Non-loopback local IPs: 192.168.3.1, 192.168.4.158, 192.168.91.1, fe80:0:0:0:0:5efe:c0a8:301%net12, fe80:0:0:0:0:5efe:c0a8:49e%net13, fe80:0:0:0:0:5efe:c0a8:5b01%net9, fe80:0:0:0:29e7:1f8b:f68:726%eth7, fe80:0:0:0:9cf2:6079:e2a7:599b%wlan0, fe80:0:0:0:b9f7:3637:e87b:8e1b%eth5, fe80:0:0:0:e0:0:0:0%net4, fe80:0:0:0:ed16:e37a:22d4:e543%eth6, fe80:0:0:0:f446:787b:3488:5e40%eth3
+[2018-06-29 15:28:17,488][INFO ][main][BasicExamplesMultiNodeSelfTest0] Enabled local MACs: 00000000000000E0, 005056C00001, 005056C00008, A088699D740C, A088699D7410, F8A96341E5BC
+[2018-06-29 15:28:17,492][INFO ][main][TcpDiscoverySpi] Successfully bound to TCP port [port=47501, localHost=0.0.0.0/0.0.0.0, locNodeId=65b4b127-48e8-4c32-aada-0d7af3741d78]
+[2018-06-29 15:28:17,752][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.3.1, rmtPort=35613]
+[2018-06-29 15:28:17,753][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.3.1, rmtPort=35613]
+[2018-06-29 15:28:17,753][INFO ][tcp-disco-sock-reader-#65%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.3.1:35613, rmtPort=35613]
+[2018-06-29 15:28:17,753][INFO ][tcp-disco-sock-reader-#65%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/192.168.3.1:35613, rmtPort=35613]
+[2018-06-29 15:28:17,754][INFO ][tcp-disco-sock-reader-#65%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/192.168.3.1:35613, rmtPort=35613]
+[2018-06-29 15:28:17,754][INFO ][tcp-disco-sock-reader-#65%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.3.1:35613, rmtPort=35613
+[2018-06-29 15:28:17,756][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/192.168.91.1, rmtPort=35617]
+[2018-06-29 15:28:17,756][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/192.168.91.1, rmtPort=35617]
+[2018-06-29 15:28:17,756][INFO ][tcp-disco-sock-reader-#66%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/192.168.91.1:35617, rmtPort=35617]
+[2018-06-29 15:28:17,757][INFO ][tcp-disco-sock-reader-#66%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/192.168.91.1:35617, rmtPort=35617]
+[2018-06-29 15:28:17,758][INFO ][tcp-disco-sock-reader-#66%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/192.168.91.1:35617, rmtPort=35617]
+[2018-06-29 15:28:17,758][INFO ][tcp-disco-sock-reader-#66%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/192.168.91.1:35617, rmtPort=35617
+[2018-06-29 15:28:17,759][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35618]
+[2018-06-29 15:28:17,759][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35618]
+[2018-06-29 15:28:17,760][INFO ][tcp-disco-sock-reader-#67%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35618, rmtPort=35618]
+[2018-06-29 15:28:17,760][INFO ][tcp-disco-sock-reader-#67%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35618, rmtPort=35618]
+[2018-06-29 15:28:17,761][INFO ][tcp-disco-sock-reader-#67%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35618, rmtPort=35618]
+[2018-06-29 15:28:17,761][INFO ][tcp-disco-sock-reader-#67%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35618, rmtPort=35618
+[2018-06-29 15:28:17,762][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/127.0.0.1, rmtPort=35619]
+[2018-06-29 15:28:17,763][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/127.0.0.1, rmtPort=35619]
+[2018-06-29 15:28:17,763][INFO ][tcp-disco-sock-reader-#68%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/127.0.0.1:35619, rmtPort=35619]
+[2018-06-29 15:28:17,764][INFO ][tcp-disco-sock-reader-#68%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/127.0.0.1:35619, rmtPort=35619]
+[2018-06-29 15:28:17,764][INFO ][tcp-disco-sock-reader-#68%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/127.0.0.1:35619, rmtPort=35619]
+[2018-06-29 15:28:17,764][INFO ][tcp-disco-sock-reader-#68%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/127.0.0.1:35619, rmtPort=35619
+[2018-06-29 15:28:21,596][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35623]
+[2018-06-29 15:28:21,597][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35623]
+[2018-06-29 15:28:21,597][INFO ][tcp-disco-sock-reader-#74%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35623, rmtPort=35623]
+[2018-06-29 15:28:21,598][INFO ][tcp-disco-sock-reader-#74%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Received ping request from the remote node [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35623, rmtPort=35623]
+[2018-06-29 15:28:21,598][INFO ][tcp-disco-sock-reader-#74%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished writing ping response [rmtNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtAddr=/0:0:0:0:0:0:0:1:35623, rmtPort=35623]
+[2018-06-29 15:28:21,598][INFO ][tcp-disco-sock-reader-#74%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35623, rmtPort=35623
+[2018-06-29 15:28:21,602][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery accepted incoming connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35624]
+[2018-06-29 15:28:21,602][INFO ][tcp-disco-srvr-#63%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] TCP discovery spawning a new thread for connection [rmtAddr=/0:0:0:0:0:0:0:1, rmtPort=35624]
+[2018-06-29 15:28:21,603][INFO ][tcp-disco-sock-reader-#75%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Started serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35624, rmtPort=35624]
+[2018-06-29 15:28:21,606][INFO ][tcp-disco-sock-reader-#75%examples.BasicExamplesMultiNodeSelfTest0%][TcpDiscoverySpi] Finished serving remote node connection [rmtAddr=/0:0:0:0:0:0:0:1:35624, rmtPort=35624
+[2018-06-29 15:28:21,614][INFO ][main][GridTcpRestProtocol] Command protocol successfully stopped: TCP binary
+[2018-06-29 15:28:26,656][INFO ][main][TcpDiscoverySpi] No verification for local node leave has been received from coordinator (will stop node anyway).
+[2018-06-29 15:28:26,677][INFO ][main][BasicExamplesMultiNodeSelfTest0] 
+
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite ver. 2.5.0#20180524-sha1:86e110c750a340dc9be2d396415f0b80d7ed8813 stopped OK
+>>> +---------------------------------------------------------------------------------+
+>>> Ignite instance name: examples.BasicExamplesMultiNodeSelfTest0
+>>> Grid uptime: 00:00:10.983
+
+
+[2018-06-29 15:28:26,686][INFO ][main][root] >>> Stopping test: BasicExamplesMultiNodeSelfTest#testBroadcastExample in 66801 ms <<<
+[2018-06-29 15:28:26,688][INFO ][main][root] >>> Stopping test class: BasicExamplesMultiNodeSelfTest <<<
+]]></system-out>
+    <system-err><![CDATA[[2018-06-29 15:28:15,710][WARN ][main][BasicExamplesMultiNodeSelfTest0] Peer class loading is enabled (disable it in production for performance and deployment consistency reasons)
+[2018-06-29 15:28:15,726][WARN ][pub-#182%examples.BasicExamplesMultiNodeSelfTest0%][GridDiagnostic] Initial heap size is 128MB (should be no less than 512MB, use -Xms512m -Xmx512m).
+[2018-06-29 15:28:15,751][WARN ][main][TcpCommunicationSpi] Message queue limit is set to 0 which may lead to potential OOMEs when running cache operations in FULL_ASYNC or PRIMARY_SYNC modes due to message queues growth on sender and receiver sides.
+[2018-06-29 15:28:15,803][WARN ][main][NoopCheckpointSpi] Checkpoints are disabled (to enable configure any GridCheckpointSpi implementation)
+[2018-06-29 15:28:15,806][WARN ][main][GridCollisionManager] Collision resolution is disabled (all jobs will be activated upon arrival).
+[2018-06-29 15:28:15,815][WARN ][main][IgniteH2Indexing] Custom H2 serialization is already configured, will override.
+[2018-06-29 15:28:21,606][ERROR][main][BasicExamplesMultiNodeSelfTest0] Failed to start manager: GridManagerAdapter [enabled=true, name=o.a.i.i.managers.discovery.GridDiscoveryManager]
+class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@3f2be1a2], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=65b4b127-48e8-4c32-aada-0d7af3741d78]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+[2018-06-29 15:28:21,608][ERROR][main][BasicExamplesMultiNodeSelfTest0] Got exception while starting (will rollback startup routine).
+class org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1725)
+	at org.apache.ignite.internal.IgniteKernal.start(IgniteKernal.java:1033)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start0(IgnitionEx.java:2014)
+	at org.apache.ignite.internal.IgnitionEx$IgniteNamedInstance.start(IgnitionEx.java:1723)
+	at org.apache.ignite.internal.IgnitionEx.start0(IgnitionEx.java:1151)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:671)
+	at org.apache.ignite.internal.IgnitionEx.start(IgnitionEx.java:596)
+	at org.apache.ignite.Ignition.start(Ignition.java:327)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1306)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.startGrid(GridAbstractTest.java:1289)
+	at org.apache.ignite.testframework.junits.common.GridAbstractExamplesTest.startRemoteNodes(GridAbstractExamplesTest.java:69)
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+	at org.apache.ignite.testframework.junits.GridAbstractTest.setUp(GridAbstractTest.java:633)
+	at org.apache.ignite.testframework.junits.common.GridCommonAbstractTest.setUp(GridCommonAbstractTest.java:485)
+	at junit.framework.TestCase.runBare(TestCase.java:139)
+	at junit.framework.TestResult$1.protect(TestResult.java:122)
+	at junit.framework.TestResult.runProtected(TestResult.java:142)
+	at junit.framework.TestResult.run(TestResult.java:125)
+	at junit.framework.TestCase.run(TestCase.java:129)
+	at junit.framework.TestSuite.runTest(TestSuite.java:255)
+	at junit.framework.TestSuite.run(TestSuite.java:250)
+	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:84)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:369)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:275)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:239)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:160)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:206)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:160)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:83)
+	at org.apache.maven.plugin.surefire.InPluginVMSurefireStarter.runSuitesInProcess(InPluginVMSurefireStarter.java:84)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeProvider(AbstractSurefireMojo.java:1107)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.executeAfterPreconditionsChecked(AbstractSurefireMojo.java:954)
+	at org.apache.maven.plugin.surefire.AbstractSurefireMojo.execute(AbstractSurefireMojo.java:832)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:862)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:286)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:197)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: class org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@3f2be1a2], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:300)
+	at org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.start(GridDiscoveryManager.java:915)
+	at org.apache.ignite.internal.IgniteKernal.startManager(IgniteKernal.java:1720)
+	... 58 more
+Caused by: class org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=65b4b127-48e8-4c32-aada-0d7af3741d78]
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.checkFailedError(TcpDiscoverySpi.java:1874)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.joinTopology(ServerImpl.java:949)
+	at org.apache.ignite.spi.discovery.tcp.ServerImpl.spiStart(ServerImpl.java:373)
+	at org.apache.ignite.spi.discovery.tcp.TcpDiscoverySpi.spiStart(TcpDiscoverySpi.java:1948)
+	at org.apache.ignite.internal.managers.GridManagerAdapter.startSpi(GridManagerAdapter.java:297)
+	... 60 more
+]]></system-err>
+  </testcase>
+</testsuite>

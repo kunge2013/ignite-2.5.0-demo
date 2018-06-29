@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 67.07 s <<< FAILURE! - in org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest
+testRunnableExample(org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest)  Time elapsed: 16.403 s  <<< ERROR!
+org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@430d3bf9], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=b0624382-763b-4a92-8ade-e06bb5d4af65]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+
+testClosureExample(org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest)  Time elapsed: 12.053 s  <<< ERROR!
+org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@550e427a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a81e621b-f2e3-4cd8-9859-0f542b849b79]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+
+testCallableExample(org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest)  Time elapsed: 11.44 s  <<< ERROR!
+org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@609c8e0d], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=116fcd12-f906-4721-b2e4-5ef9817f2e44]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+
+testExecutorExample(org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest)  Time elapsed: 15.09 s  <<< ERROR!
+org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@66db5a9a], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=a36538fc-540c-47df-9a21-ee17ab9d6706]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+
+testBroadcastExample(org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest)  Time elapsed: 11.087 s  <<< ERROR!
+org.apache.ignite.IgniteException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start manager: GridManagerAdapter [enabled=true, name=org.apache.ignite.internal.managers.discovery.GridDiscoveryManager]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.IgniteCheckedException: Failed to start SPI: TcpDiscoverySpi [addrRslvr=null, sockTimeout=5000, ackTimeout=5000, marsh=JdkMarshaller [clsFilter=org.apache.ignite.internal.IgniteKernal$5@3f2be1a2], reconCnt=10, reconDelay=2000, maxAckTimeout=600000, forceSrvMode=false, clientReconnectDisabled=false, internalLsnr=null]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+Caused by: org.apache.ignite.spi.IgniteSpiException: Local node and remote node have different version numbers (node will not join, Ignite does not support rolling updates, so versions must be exactly the same) [locBuildVer=2.4.0, rmtBuildVer=2.5.0, locNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], rmtNodeAddrs=[FK/0:0:0:0:0:0:0:1, FK/0:0:0:0:0:0:0:1, FK.mshome.net/127.0.0.1, /192.168.3.1, /192.168.4.158, /192.168.91.1], locNodeId=513e4c86-fe8b-4321-9b28-44386dbedff2, rmtNodeId=65b4b127-48e8-4c32-aada-0d7af3741d78]
+	at org.apache.ignite.examples.BasicExamplesMultiNodeSelfTest.beforeTest(BasicExamplesMultiNodeSelfTest.java:26)
+
